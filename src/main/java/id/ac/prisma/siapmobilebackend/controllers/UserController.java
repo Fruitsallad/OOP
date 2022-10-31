@@ -30,13 +30,6 @@ public class UserController {
         Map response = new HashMap();
 
 
-
-
-
-
-
-
-
         response.put("status", "success");
         response.put("customer", myName);
         return response;

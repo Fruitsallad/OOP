@@ -1,4 +1,4 @@
-package id.ac.prisma.siapmobilebackend.controllers;
+package id.ac.prisma.siapmobilebackend.tugas;
 
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,14 +15,15 @@ public class UserGreetings {
     public Map goodmorning(@RequestBody Map bodyRequest) {
         String name = (String) bodyRequest.get("name");
         Map response = new HashMap();
-        response.put("message", "Good Morning " + name);
+        response.put("message", "Selamat Pagi " + name);
+        response.put("message", "Silahkan untuk memasuki ruangan 1!");
         return response;
     }
 
     @RequestMapping(value = "/welcome", method = RequestMethod.POST, produces = "application/json")
     public Map welcome(@RequestBody Map bodyRequest) {
-        String name = () bodyRequest.get("name");
-        Map response = new StringHashMap();
+        String name = (String) bodyRequest.get("name");
+        Map response = new HashMap();
         response.put("message", "Welcome to Prisma University, " + name);
         return response;
     }

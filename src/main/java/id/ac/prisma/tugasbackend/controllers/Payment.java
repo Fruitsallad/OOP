@@ -1,4 +1,4 @@
-package id.ac.prisma.siapmobilebackend.tugas;
+package id.ac.prisma.tugasbackend.controllers;
 
 
 import org.springframework.web.bind.annotation.RequestBody;

@@ -1,4 +1,5 @@
-## welcomee
-## untuk tugas ada di dalam file "tugas"
+## welcome
+## and
+## enjoyyyyy
 
 

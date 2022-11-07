@@ -15,8 +15,7 @@ public class UserGreetings {
     public Map goodmorning(@RequestBody Map bodyRequest) {
         String name = (String) bodyRequest.get("name");
         Map response = new HashMap();
-        response.put("message", "Selamat Pagi " + name);
-        response.put("message", "Silahkan untuk memasuki ruangan 1!");
+        response.put("message", "Silahkan untuk memasuki ruangan 1!," + name);
         return response;
     }
 
@@ -24,7 +23,7 @@ public class UserGreetings {
     public Map welcome(@RequestBody Map bodyRequest) {
         String name = (String) bodyRequest.get("name");
         Map response = new HashMap();
-        response.put("message", "Welcome to Prisma University, " + name);
+        response.put("message", "Welcome to the  Metaverse, " + name);
         return response;
     }
 }

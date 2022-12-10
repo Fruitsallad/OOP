@@ -33,6 +33,7 @@ public class PaymentService {
             String merchantName
     ){
         Map response = new HashMap();
+        //        1.2. Create Transaksi ke Database
         TbTransactions tbTransactions = new TbTransactions();
         try {
             tbTransactions.setTransactionDate(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse(transactionDate));
@@ -85,7 +86,9 @@ public class PaymentService {
             e.printStackTrace();
         }
 
+//        1.4. Save data QR ke Database
 
+//        1.5. Kirim Response Data QR ke Merchant
         response.put("amount", amount);
         response.put("transactionDate", transactionDate);
         response.put("paymentMethod", paymentMethod);

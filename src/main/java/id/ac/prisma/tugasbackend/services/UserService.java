@@ -1,7 +1,7 @@
 package id.ac.prisma.tugasbackend.services;
 
-import id.ac.prisma.tugasbackend.data.model.TBMerchant;
-import id.ac.prisma.tugasbackend.data.repo.TBMerchantRepository;
+import id.ac.prisma.tugasbackend.data.model.TbMerchant;
+import id.ac.prisma.tugasbackend.data.repo.TbMerchantRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,14 +12,14 @@ import java.util.Map;
 public class UserService {
     @Autowired
     static
-    TBMerchantRepository tbMerchantRepository;
+    TbMerchantRepository tbMerchantRepository;
 
     public static Map createUser(
             String name,
             String email,
             String address
     ){
-        TBMerchant tbMerchant = new TBMerchant();
+        TbMerchant tbMerchant = new TbMerchant();
         tbMerchant.setName(name);
         tbMerchant.setEmail(email);
         tbMerchant.setAddress(address);
